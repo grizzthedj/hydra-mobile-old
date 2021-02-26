@@ -13,5 +13,15 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 4 page"></app-explore-container>
+  <ion-item>
+    <ion-label>Reminder Default Time</ion-label>
+    <ion-datetime displayFormat="hh:mm A" value="20:00"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Default Reminder</ion-label>
+    <ion-toggle [(ngModel)]="reminder"></ion-toggle>
+  </ion-item>
+
+
 </ion-content>
